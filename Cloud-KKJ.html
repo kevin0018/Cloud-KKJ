@@ -3,8 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <title>Cloud KKJ</title>
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        #header {
+            margin: auto;
+            margin-left: 0px;
+            width: 500px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        ul, ol {
+            list-style: none;
+        }
+        .nav > li {
+            float: left;
+        }
+        .nav li a {
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 12px;
+            display: block;
+        }
+        .nav li a:hover {
+            background-color: #434343;
+        }
+        .nav li ul {
+            display: none;
+            position:absolute;
+            min-width: 140px;
+        }
+        .nav li:hover > ul {
+            display: block;
+        }
+        .nav li ul li {
+            position: relative;
+        }
+        .nav li ul li ul {
+            right: -140px;
+            top: 0px;
+        }
+        .item-r {
+            float: right;
+        }
+    </style>
 </head>
 <body>
+    <div id="header">
+        <ul class="nav">
+            <li><a href="Cloud-KKJ.html">Cloud KKJ</a></li>
+            <li><a href="">Planes</a>
+                <ul>
+                    <li><a href="">Personal</a>
+                        <ul>
+                            <li><a href="">Plus</a></li>
+                            <li><a href="">Familiar</a></li>
+                        </ul>
+                    <li><a href="">Empresas</a>
+                        <ul>
+                            <li><a href="">Profesional</a></li>
+                            <li><a href="">Estandar</a></li>
+                            <li><a href="">Avanzado</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="">Acerca de Nosotros</a>
+                <ul>
+                    <li><a href="">Quiénes somos</a></li>
+                    <li><a href="">Cómo lo hacemos</a></li>
+                    <li><a href="">Nuestro equipo</a></li>
+                </ul>
+            </li>
+            <li class="item-r"><a href="">Contacto</a></li>
+        </ul>
+    </div>  
     
 </body>
 </html>
