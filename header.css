@@ -1,45 +1,99 @@
-* {
-    margin: 0px;
-    padding: 0px;
+.header {
+    background: rgb(60, 122, 180);
+    color: white;
+    padding: 32px 0;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
 }
-#header {
-    margin: auto;
-    margin-left: 0px;
+    .header a {
+        color: white;
+        text-decoration: none
+    }
+
+.logo-nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* Esta propiedad lo que hace es que si un elemento tiene más ancho del que se le permite no lo fuerce a estar al lado de otro y que pase al lado */
 }
-ul, ol {
+
+.logo {
+    letter-spacing: 8px;
+    font-size: 20px;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.navigation ul{
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
-.nav > li {
-    float: left;
+
+    .navigation ul li {
+        display: inline-block
+    }
+
+        .navigation ul li a {
+            display: block;
+            padding: 8px 16px;
+            transition: all 0.4s linear;
+            border-radius: 5px;
+        }
+
+            .navigation ul li a:hover {
+                background: rgb(168, 165, 165);
+            }
+
+.main {
+    padding-top: 150px;
 }
-.nav li a {
-    background-color: #000;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 12px;
-    display: block;
+
+.footer {
+    background:rgb(60, 122, 180);
+    padding: 60px;
+    text-align: center;
+    margin-top: 90px;
 }
-.nav li a:hover {
-    background-color: #434343;
-}
-.nav li ul {
-    display: none;
-    position:absolute;
-    min-width: 140px;
-}
-.nav li:hover > ul {
-    display: block;
-}
-.nav li ul li {
-    position: relative;
-}
-.nav li ul li ul {
-    right: -140px;
-    top: 0px;
-}
-.item-r {
-    float: right;
+
+@media only screen and (max-width: 767px) {
+    
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        padding: 8px 16px;
+    }
+
+    .navigation {
+        width: 100%;
+        margin-top: 16px;
+    }
+
+        .navigation ul{
+            display: none;
+        }
+
+        .navigation ul.show {
+            display: block;
+        }
+
+    .navigation ul li {
+        display: block
+    }
+
+        .navigation ul li a {
+            display: block;
+            padding: 8px 0;
+            transition: all 0.4s linear;
+            border-radius: 5px;
+        }
+
+            .navigation ul li a:hover {
+                background: rgb(168, 165, 165);
+            }
 }
