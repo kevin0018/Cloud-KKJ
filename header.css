@@ -6,13 +6,8 @@
     margin: auto;
     margin-left: 0px;
     display: flex;
-    width: 100%;
-    font-family: Arial, Helvetica, sans-serif;    
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    left: 0;
-    top: 0;
 }
 ul, ol {
     list-style: none;
