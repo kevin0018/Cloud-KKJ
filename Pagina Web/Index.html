@@ -5,7 +5,7 @@
     <title>Cloud KKJ</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- La declaración viewport nos permite definir los parámetros de visualización de una página web en los diferentes dispositivos. -->
-    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="header&footer.css">
     <link rel="stylesheet" href="body.css">
     <style>
 
@@ -20,6 +20,20 @@
             padding: 20px;
             font-size: 30px;
         }
+
+        .carousel-inner img {
+            width: 100%;
+            margin: auto;
+            min-height:200px;
+        }
+
+        /* Oculta el carrusel cuando han pasado 600 pixels*/
+        @media (max-width: 600px) {
+            .carousel-caption {
+                display: none; 
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -40,19 +54,77 @@
     </header>
 
     <main class="main">
-        <div class="container">
-            <div class="flex-container">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicadores -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel" data-slide-to="1"></li>
+            </ol>
+        
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="·" alt="Image">
+                <div class="carousel-caption">
+                  <h3>CloudKKj</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quae, accusantium ipsum quod cupiditate quos, in laboriosam eaque accusamus, nisi molestias rerum? Labore dolor omnis itaque sequi consequatur unde velit!</p>
+                </div>      
+              </div>
+        
+              <div class="item">
+                <img src="#" alt="Image">
+                <div class="carousel-caption">
+                  <h3>¿Por qué nosotros?</h3>
+                  <p>Lorem ipsum...</p>
+                </div>      
+              </div>
             </div>
 
+            <!-- Controles de izquierda y derecha -->
+            <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
         </div>
     </main>
     
-    <footer class="footer">
-        <div class="container">
-            <p>Cloud kkj</p>
+    <footer class=" footer">
+        <div class="footer_content">
+            <div class="footer_column1">
+                <img class="footer_logo" src="#" alt="footer logo">
+            </div>
+            <div class="footer_links-container">
+                <ul class="footer_links-list">
+                    <li class="footer_links-list-header">
+                        <a href="/Pagina Web/Productos.html">Productos</a>
+                    </li>
+                    <li>
+                        <a href="/Pagina Web/Productos.html#Ventajas">Ventajas</a>
+                    </li>
+                    <li>
+                        <a href="/Pagina Web/Productos.html#Planes">Planes</a>
+                    </li>
+                </ul>   
+                <ul class="footer_links-list">
+                    <li class="footer_links-list-header">
+                        <a href="/Pagina Web/Acerca.HTML#">Acerca</a>
+                    </li>
+                    <li>
+                        <a href="/Pagina Web/Acerca.HTML#">Más sobre CloudKKj</a>
+                    </li>
+                </ul>
+                <ul class="footer_links-list">
+                    <li class="footer_links-list-header">
+                        <a href="/Pagina Web/Contacto.html#">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="/Pagina Web/Contacto.html#Email">Email</a>
+                    </li>
+                </ul>             
+            </div>
         </div>
     </footer>
 

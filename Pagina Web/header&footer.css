@@ -1,7 +1,7 @@
 .header {
     background: rgb(60, 122, 180);
     color: white;
-    padding: 32px 0;
+    padding: 16px 0;
 
     position: fixed;
     left: 0;
@@ -60,6 +60,10 @@
     text-align: center;
     margin-top: 90px;
 }
+    .footer a {
+        color: white;
+        text-decoration: none
+    }
 
 @media only screen and (max-width: 767px) {
     
