@@ -21,19 +21,6 @@
             font-size: 30px;
         }
 
-        .carousel-inner img {
-            width: 100%;
-            margin: auto;
-            min-height:200px;
-        }
-
-        /* Oculta el carrusel cuando han pasado 600 pixels*/
-        @media (max-width: 600px) {
-            .carousel-caption {
-                display: none; 
-            }
-        }
-
     </style>
 </head>
 <body>
@@ -54,77 +41,46 @@
     </header>
 
     <main class="main">
-        <div id="carousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicadores -->
-            <ol class="carousel-indicators">
-              <li data-target="#carousel" data-slide-to="0" class="active"></li>
-              <li data-target="#carousel" data-slide-to="1"></li>
-            </ol>
-        
-            <div class="carousel-inner" role="listbox">
-              <div class="item active">
-                <img src="·" alt="Image">
-                <div class="carousel-caption">
-                  <h3>CloudKKj</h3>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quae, accusantium ipsum quod cupiditate quos, in laboriosam eaque accusamus, nisi molestias rerum? Labore dolor omnis itaque sequi consequatur unde velit!</p>
-                </div>      
-              </div>
-        
-              <div class="item">
-                <img src="#" alt="Image">
-                <div class="carousel-caption">
-                  <h3>¿Por qué nosotros?</h3>
-                  <p>Lorem ipsum...</p>
-                </div>      
-              </div>
-            </div>
-
-            <!-- Controles de izquierda y derecha -->
-            <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Anterior</span>
-            </a>
-            <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Siguiente</span>
-            </a>
+        <div class="container">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores ea debitis id illo vero molestias dolor quam vel magni architecto, cum dolore facilis cumque in maiores ipsa. Nostrum, dolor qui.</p>
+            
+            
         </div>
     </main>
     
-    <footer class=" footer">
-        <div class="footer_content">
-            <div class="footer_column1">
-                <img class="footer_logo" src="#" alt="footer logo">
-            </div>
-            <div class="footer_links-container">
-                <ul class="footer_links-list">
-                    <li class="footer_links-list-header">
-                        <a href="/Pagina Web/Productos.html">Productos</a>
-                    </li>
-                    <li>
-                        <a href="/Pagina Web/Productos.html#Ventajas">Ventajas</a>
-                    </li>
-                    <li>
-                        <a href="/Pagina Web/Productos.html#Planes">Planes</a>
-                    </li>
-                </ul>   
-                <ul class="footer_links-list">
-                    <li class="footer_links-list-header">
-                        <a href="/Pagina Web/Acerca.HTML#">Acerca</a>
-                    </li>
-                    <li>
-                        <a href="/Pagina Web/Acerca.HTML#">Más sobre CloudKKj</a>
-                    </li>
+    <footer class="footer">
+        <div class="l-footer">
+            <img src="" alt="logo">
+            <p>CloudKKJ</p>
+        </div>
+        <ul class="r-footer">
+            <li>
+                <h2>Productos</h2>
+            
+                <ul class="box">
+                    <li><a href="#">Ventajas</a></li>
+                    <li><a href="#">Planes</a></li>
                 </ul>
-                <ul class="footer_links-list">
-                    <li class="footer_links-list-header">
-                        <a href="/Pagina Web/Contacto.html#">Contacto</a>
-                    </li>
-                    <li>
-                        <a href="/Pagina Web/Contacto.html#Email">Email</a>
-                    </li>
-                </ul>             
-            </div>
+            </li>
+
+            <li class="features">
+                <h2>Acerca</h2>
+            
+                <ul class="box">
+                    <li><a href="#">Más sobre CloudKKJ</a></li>
+                </ul>
+            </li>
+
+            <li>    
+                <h2>Contacto</h2>
+            
+                <ul class="box">
+                    <li><a href="#">Email</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="b-footer">
+            <p>All rights reserved by ©CloudKKJ 2020</p>
         </div>
     </footer>
 
