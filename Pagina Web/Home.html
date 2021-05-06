@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- La declaración viewport nos permite definir los parámetros de visualización de una página web en los diferentes dispositivos. -->
     <title>CloudKKJ</title>
-    <link rel="stylesheet" href="Header.css">
+    <link rel="stylesheet" href="Header_home.css">
+    <link rel="stylesheet" href="Footer.css">
+    <link rel="stylesheet" href="carousel.css"> 
 </head>
 <body>
     
@@ -30,8 +32,50 @@
       </header>
 
       <section>
-        <h2>Lorem ipsum</h2>
-        <p>Sed lectus mi, eleifend quis congue non, lacinia id quam. Cras porta pellentesque nulla, ac auctor ligula scelerisque non. In vel placerat lacus. Nam pretium vitae purus et laoreet. Aliquam erat volutpat. Pellentesque id volutpat sem, et condimentum nisl. Donec bibendum congue mauris, ac commodo tortor volutpat ac. Donec lobortis lorem nisi, sit amet bibendum lacus vestibulum interdum. Donec mollis ligula at semper iaculis.</p>
+
+        <section class="carousel" aria-label="Gallery">
+          <ol class="carousel__viewport">
+            <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+              
+              <div class="carousel__snapper">
+                <a href="#carousel__slide2" class="carousel__prev">Go to last slide</a>
+                <div class="text">
+                  <h2>Servidor dedicado</h2>
+                  <p>Multiplique la capacidad de su infraestructura con nuestros servidores dedicados, que combinan un alto rendimiento con una solida fiabilidad.</p>
+                  <img src="servidor-dedicado.jpg" height="250px">
+                </div>
+                <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+              </div>
+            </li>
+
+            <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+              <div class="text">
+                <h2>Evento 100% presencial el 27 de mayo de 2021</h2>
+                <p>
+                  Conozca a nuestros expertos asistiendo a la presentación.
+                </p>
+                  <div class="flexs">
+                    <img src="fecha27.jpg" height="210px">
+                  </div>
+                
+              </div>
+              <div class="carousel__snapper"></div>
+                <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+                <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
+            </li>
+          </ol>
+          <aside class="carousel__navigation">
+            <ol class="carousel__navigation-list">
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
+              </li>
+            </ol>
+          </aside>
+        </section>
+        
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, quam necessitatibus odit, eos sed veniam beatae ex molestias maiores, a ipsam minima laboriosam suscipit nulla distinctio! Asperiores laborum recusandae veritatis.</p>
 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam numquam vitae impedit odit. Voluptates accusamus soluta voluptate reiciendis sunt rem laudantium culpa harum voluptatem sint ipsum molestias doloremque, voluptas enim.</p>
@@ -40,8 +84,46 @@
         </section>
 
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="Header.js"></script>
+
+  
+  <footer class="footer">
+    <div class="l-footer">
+        <img src="fotologo.png" alt="logo">
+    </div>
+    <ul class="r-footer">
+      <li>
+        <h2>Productos</h2>
+              
+        <ul class="box">
+          <li><a href="#">Ventajas</a></li>
+          <li><a href="#">Planes</a></li>
+        </ul>
+      </li>
+  
+      <li class="features">
+        <h2>Acerca</h2>
+              
+        <ul class="box">
+          <li><a href="#">Más sobre CloudKKJ</a></li>
+        </ul>   
+      </li>
+  
+      <li>        
+        <h2>Contacto</h2>
+              
+        <ul class="box">
+          <li><a href="#">Email</a></li>
+        </ul>
+      </li>
+    </ul>
+  
+    <div class="b-footer">
+      <p>All rights reserved by &copy;CloudKKJ 2020</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="Header.js"></script>
     
 </body>
 </html>

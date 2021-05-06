@@ -21,8 +21,7 @@
 }
 
 .logo {
-    letter-spacing: 8px;
-    font-size: 20px;
+    height: 75px;
 }
 
 .menu-icon {
@@ -58,126 +57,39 @@
     box-sizing: border-box;
     }
 
-
-.footer {
-    display: flex;
-    flex-flow: row wrap;
-    position: relative;
-    padding: 25px;
-    color: #fff;
-    background-color: rgb(60, 122, 180);
-    }
+    @media only screen and (max-width: 767px) {
     
-    .footer > * {
-    flex:  1 100%;
-    }
-    
-    .l-footer {
-    margin-right: 0.5px;
-    margin-bottom: 10px;
-    padding-top: 70px;
-    display: flex;
-    }
-
-    .l-footer img {
-        width: auto;
-    }
-    
-    h2 {
-    font-weight: 600;
-    font-size: 18px;
-    color: white;
-    }
-    
-    .footer ul {
-    list-style: none;
-    padding-left: 0;
-    }
-    
-    .footer li {
-    line-height: 45px;
-    }
-    
-    .footer a {
-    text-decoration: none;
-    }
-    
-    .r-footer {
-    display: flex;
-    flex-flow: row wrap;
-    }
-    
-    .r-footer > * {
-    flex: 1 50%;
-    margin-right: 2px;
-    }
-    
-    .box a {
-    color: rgb(248, 243, 243);
-    }
-    
-    .b-footer {
-    text-align: center;
-    color: white;
-    padding-top: 70px;
-    }
-    
-    .l-footer p {
-    padding-right: 20%;
-    color: white;
-    }   
-
-@media only screen and (max-width: 767px) {
-    
-    .menu-icon {
-        display: block;
-        cursor: pointer;
-        padding: 8px 16px;
-    }
-
-    .navigation {
-        width: 100%;
-        margin-top: 16px;
-    }
-
-        .navigation ul{
-            display: none;
-        }
-
-        .navigation ul.show {
+        .menu-icon {
             display: block;
+            cursor: pointer;
+            padding: 8px 16px;
         }
-
-    .navigation ul li {
-        display: block
-    }
-
-        .navigation ul li a {
-            display: block;
-            padding: 8px 0;
-            transition: all 0.4s linear;
-            border-radius: 5px;
+    
+        .navigation {
+            width: 100%;
+            margin-top: 16px;
         }
-
-            .navigation ul li a:hover {
-                background: rgb(168, 165, 165);
+    
+            .navigation ul{
+                display: none;
             }
-}
-
-@media screen and (min-width: 600px) {
-    .r-footer > * {
-    flex: 1;
-    }
     
-    .features {
-    flex-grow: 2;
-    }
+            .navigation ul.show {
+                display: block;
+            }
     
-    .l-footer {
-    flex: 1 0px;
-    }
+        .navigation ul li {
+            display: block
+        }
     
-    .r-footer {
-    flex: 2 0px;
-    }
+            .navigation ul li a {
+                display: block;
+                padding: 8px 0;
+                transition: all 0.4s linear;
+                border-radius: 5px;
+            }
+    
+                .navigation ul li a:hover {
+                    background: rgb(168, 165, 165);
+                }
     }
