@@ -1,7 +1,7 @@
 .footer {
     display: flex;
     flex-flow: row wrap;
-    position: relative;
+    bottom: 0;
     padding: 25px;
     color: #fff;
     background-color: rgb(60, 122, 180);
