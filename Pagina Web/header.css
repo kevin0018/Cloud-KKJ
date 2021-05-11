@@ -28,6 +28,12 @@ body {
     height: 100%;
     margin-top: 60px;
 }
+.main h2{
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+}
+
 .mainInner{
     display: table;
     height: 100%;

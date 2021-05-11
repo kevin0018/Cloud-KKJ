@@ -6,28 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="header_footer.css">
-    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="Footer.css">
+    <link rel="shortcut icon" href="favicon.png">
 
 </head>
 <body>
     
-    <header class="header">
-        <div class="container logo-nav-container">
-            <a href="Index.html" class="logo">Cloud KKJ</a>
-            <span class="menu-icon">Ver menú</span>
-            <nav class="navigation">
-                <ul>
-                    <li><a href="Index.html">Inicio</a></li>
-                    <li><a href="Productos.html">Productos</a></li>
-                    <li><a href="Acerca.HTML">Acerca</a></li>
-                    <li><a href="Contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <div class="header"></div>
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+        <div class="spinner diagonal part-1"></div>
+        <div class="spinner horizontal"></div>
+        <div class="spinner diagonal part-2"></div>
+    </label>
+    <div id="sidebarMenu">
+        <ul class="sidebarMenuInner">
+            <li><a href="Index.html">Inicio</a></li>
+            <li><a href="Productos.html">Planes y precios</a></li>
+            <li><a href="Acerca.HTML">Acerca</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
+    </div>
 
+    <div class="main">
+        <div class="mainInner">
+            <section>
+
+            </section>
+
+        </div>
+    </div>
     
 
     <footer class="footer">
@@ -67,7 +76,7 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="scripts.js"></script>
+    <script src="header.js"></script>
 
 </body>
 </html>
