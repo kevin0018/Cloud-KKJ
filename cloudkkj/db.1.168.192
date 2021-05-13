@@ -1,0 +1,19 @@
+;
+; BIND zone file for 192.168.1.xxx
+;
+
+$TTL	3D
+@	IN	SOA	ns.cloudkkj.org.	root.cloudkkj.org. (
+			2020300401		; serial
+			8H			; refresh
+			2H			; retry
+			4W			; expire
+			1D )			; minimum
+;
+		NS	ns.cloudkkj.org.	; Nameserver address
+
+100		PTR	server.cloudkkj.org.
+100		PTR	ns.cloudkkj.org.
+100		PTR	mail.cloudkkj.org.
+101		PTR	virtual.cloudkkj.org.
+1		PTR	router.cloudkkkj.org.

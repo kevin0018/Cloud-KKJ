@@ -1,0 +1,30 @@
+;
+; BIND zone file for cloudkkj.org
+;
+
+$TTL	3D
+@	IN	SOA	ns.cloudkkj.org	root.cloudkkj.org. (
+			2020300401	; serial
+			8H		; refresh
+			2H		; retry
+			4W		; expire
+			1D )		; minimum
+;
+		NS	ns		; Inet address of name server
+		MX	10 mail		; Primary mail exchanger
+
+ns		A	192.168.1.100
+mail		A	192.168.1.100
+
+cloudkkj.org.	A	192.168.1.100
+server		A	192.168.1.100
+
+virtual		A	192.168.1.101
+
+router		A	192.168.1.1	; router ADSL
+gateway		CNAME	router
+gw		CNAME	router
+
+proxy		CNAME	server
+www		CNAME	server
+ftp		CNAME	server
