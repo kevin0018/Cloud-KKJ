@@ -1,0 +1,256 @@
+dn: dc=cloudkkj,dc=org
+objectClass: top
+objectClass: dcObject
+objectClass: organization
+o: cloudkkj
+dc: cloudkkj
+
+dn: cn=admin,dc=cloudkkj,dc=org
+objectClass: simpleSecurityObject
+objectClass: organizationalRole
+cn: admin
+description: LDAP administrator
+
+dn: ou=cloudkkj,dc=cloudkkj,dc=org
+objectClass: organizationalUnit
+objectClass: top
+ou: cloudkkj
+
+dn: ou=Usuarios,ou=cloudkkj,dc=cloudkkj,dc=org
+objectClass: organizationalUnit
+objectClass: top
+ou: Usuarios
+
+dn: ou=Grupos,ou=cloudkkj,dc=cloudkkj,dc=org
+objectClass: organizationalUnit
+objectClass: top
+ou: Grupos
+
+dn: ou=Equipos,ou=cloudkkj,dc=cloudkkj,dc=org
+objectClass: organizationalUnit
+objectClass: top
+ou: Equipos
+
+dn: ou=Administradores,ou=cloudkkj,dc=cloudkkj,dc=org
+objectClass: organizationalUnit
+objectClass: top
+ou: Administradores
+
+dn: cn=Marketing,ou=Grupos,ou=cloudkkj,dc=cloudkkj,dc=org
+gidNumber: 500
+cn: Marketing
+objectClass: posixGroup
+objectClass: top
+
+dn: cn=Informatica,ou=Grupos,ou=cloudkkj,dc=cloudkkj,dc=org
+gidNumber: 501
+cn: Informatica
+objectClass: posixGroup
+objectClass: top
+
+dn: cn=Recursos humanos,ou=Grupos,ou=cloudkkj,dc=cloudkkj,dc=org
+gidNumber: 502
+cn: Recursos humanos
+objectClass: posixGroup
+objectClass: top
+
+dn: cn=Equipos,ou=Grupos,ou=cloudkkj,dc=cloudkkj,dc=org
+gidNumber: 503
+cn: Equipos
+objectClass: posixGroup
+objectClass: top
+
+dn: cn=Administradores,ou=Grupos,ou=cloudkkj,dc=cloudkkj,dc=org
+gidNumber: 504
+cn: Administradores
+objectClass: posixGroup
+objectClass: top
+
+dn: cn=Jordi Barberan,ou=Usuarios,ou=cloudkkj,dc=cloudkkj,dc=org
+cn: Jordi Barberan
+givenName: Jordi
+gidNumber: 501
+homeDirectory: /home/users/jbarberan
+sn: Barberan
+loginShell: /bin/sh
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+uidNumber: 1000
+uid: jbarberan
+
+dn: cn=Kevin Hernandez,ou=Usuarios,ou=cloudkkj,dc=cloudkkj,dc=org
+cn: Kevin Hernandez
+givenName: Kevin
+gidNumber: 501
+homeDirectory: /home/users/khernandez
+sn: Hernandez
+loginShell: /bin/sh
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+uidNumber: 1001
+uid: khernandez
+
+dn: cn=Kyle Go,ou=Usuarios,ou=cloudkkj,dc=cloudkkj,dc=org
+cn: Kyle Go
+givenName: Kyle
+gidNumber: 501
+homeDirectory: /home/users/kgo
+sn: Go
+loginShell: /bin/sh
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+uidNumber: 1002
+uid: kgo
+
+dn: cn=Pablo Coches,ou=Usuarios,ou=cloudkkj,dc=cloudkkj,dc=org
+cn: Pablo Coches
+givenName: Pablo
+gidNumber: 501
+homeDirectory: /home/users/pcoches
+sn: Coches
+loginShell: /bin/sh
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+uidNumber: 1003
+uid: pcoches
+
+dn: cn=Nicolas Verde,ou=Usuarios,ou=cloudkkj,dc=cloudkkj,dc=org
+cn: Nicolas Verde
+givenName: Nicolas
+gidNumber: 502
+homeDirectory: /home/users/nverde
+sn: Verde
+loginShell: /bin/sh
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+uidNumber: 1004
+uid: nverde
+
+dn: cn=At.cliente,ou=Grupos,ou=cloudkkj,dc=cloudkkj,dc=org
+gidNumber: 505
+cn: At.cliente
+objectClass: posixGroup
+objectClass: top
+
+dn: cn=Luisa Dolores,ou=Usuarios,ou=cloudkkj,dc=cloudkkj,dc=org
+cn: Luisa Dolores
+givenName: Luisa
+gidNumber: 502
+homeDirectory: /home/users/ldolores
+sn: Dolores
+loginShell: /bin/sh
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+uidNumber: 1005
+uid: ldolores
+
+dn: cn=Marco Antoli,ou=Usuarios,ou=cloudkkj,dc=cloudkkj,dc=org
+cn: Marco Antoli
+givenName: Marco
+gidNumber: 500
+homeDirectory: /home/users/mantoli
+sn: Antoli
+loginShell: /bin/sh
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+uidNumber: 1006
+uid: mantoli
+
+dn: cn=Alejandro Martinez,ou=Usuarios,ou=cloudkkj,dc=cloudkkj,dc=org
+cn: Alejandro Martinez
+givenName: Alejandro
+gidNumber: 500
+homeDirectory: /home/users/amartinez
+sn: Martinez
+loginShell: /bin/sh
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+uidNumber: 1007
+uid: amartinez
+
+dn: cn=Paula Rodriguez,ou=Usuarios,ou=cloudkkj,dc=cloudkkj,dc=org
+cn: Paula Rodriguez
+givenName: Paula
+gidNumber: 505
+homeDirectory: /home/users/prodriguez
+sn: Rodriguez
+loginShell: /bin/sh
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+uidNumber: 1008
+uid: prodriguez
+
+dn: cn=Angel Jimenez,ou=Usuarios,ou=cloudkkj,dc=cloudkkj,dc=org
+cn: Angel Jimenez
+givenName: Angel
+gidNumber: 505
+homeDirectory: /home/users/ajimenez
+sn: Jimenez
+loginShell: /bin/sh
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+uidNumber: 1009
+uid: ajimenez
+
+dn: cn=Julio Sanchez,ou=Usuarios,ou=cloudkkj,dc=cloudkkj,dc=org
+cn: Julio Sanchez
+givenName: Julio
+gidNumber: 505
+homeDirectory: /home/users/jsanchez
+sn: Sanchez
+loginShell: /bin/sh
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+uidNumber: 1010
+uid: jsanchez
+
+dn: cn=Camilo Garatejo,ou=Usuarios,ou=cloudkkj,dc=cloudkkj,dc=org
+cn: Camilo Garatejo
+givenName: Camilo
+gidNumber: 505
+homeDirectory: /home/users/cgaratejo
+sn: Garatejo
+loginShell: /bin/sh
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+uidNumber: 1011
+uid: cgaratejo
+
+dn: cn=Admin Uno,ou=Usuarios,ou=cloudkkj,dc=cloudkkj,dc=org
+cn: Admin Uno
+givenName: Admin
+gidNumber: 504
+homeDirectory: /home/users/auno
+sn: Uno
+loginShell: /bin/sh
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+uidNumber: 1012
+uid: auno
+
+dn: cn=Admin Dos,ou=Usuarios,ou=cloudkkj,dc=cloudkkj,dc=org
+cn: Admin Dos
+givenName: Admin
+gidNumber: 504
+homeDirectory: /home/users/ados
+sn: Dos
+loginShell: /bin/sh
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+uidNumber: 1013
+uid: ados
+
