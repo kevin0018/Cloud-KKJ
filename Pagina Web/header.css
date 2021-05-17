@@ -56,6 +56,7 @@ body {
     transform: translateX(-250px);
     transition: transform 250ms ease-in-out;
     background: linear-gradient(180deg, rgb(60, 122, 180) 0%, #040c31 100%);
+    z-index: 10;
 }
 .sidebarMenuInner{
     margin:0;
@@ -149,4 +150,8 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     box-sizing: border-box;
     transform: rotate(-135deg);
     margin-top: -9px;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
