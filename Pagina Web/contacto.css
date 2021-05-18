@@ -104,7 +104,7 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
     -ms-flex-direction: row;
     flex-direction: row;
 }
-}
+
 
 .info-item div {
     display: block;
