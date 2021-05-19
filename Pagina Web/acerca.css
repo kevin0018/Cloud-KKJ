@@ -1,3 +1,12 @@
+.main-nosotros {
+    margin: 0 auto;
+    height: 100%;
+}
+
+.nosotros-header {
+    background-color: rgb(60, 122, 180);
+}
+
 .nosotros-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7,30 +16,32 @@
     justify-content: space-between;
     width: 1010px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 60px;
+    margin-bottom: 30px;
 }
 
-.content-title {
+.content-title-header {
     font-family: "Open Sans", sans-serif;
-    font-size: 27px!important;
+    font-size: 27px;
     line-height: 58px;
     letter-spacing: 0;
-    color: #000000;
+    color: #ffffff;
     font-weight: 400;
     width: 545px;
     padding-top: 20px;
 }
 
-.content-description {
+.content-description-header {
     clear: both;
     display: block;
     font-family: "Open Sans", sans-serif;
-    font-size: 18px!important;
+    font-size: 18px;
     line-height: 27px;
     letter-spacing: 0;
-    color: #2e2d2d;
+    color: #f0efef;
     width: 502px;
-    margin-top: 22px;
+    margin-top: 12px;
+    margin-bottom: 30px;
 }
 
 .img {
@@ -42,4 +53,55 @@
 }
 .div-img {
     display: block;
+}
+
+
+.content-title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 27px;
+    line-height: 58px;
+    letter-spacing: 0;
+    color: #000000;
+    font-weight: 400;
+    max-width: 66.66667%;
+    padding-top: 20px;
+}
+
+.content-description {
+    clear: both;
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0;
+    color: #000000;
+    max-width: 66.66667%;
+    margin-top: 12px;
+    margin-bottom: 30px;
+}
+
+.content-title-right {
+    font-family: "Open Sans", sans-serif;
+    font-size: 27px;
+    line-height: 58px;
+    letter-spacing: 0;
+    color: #000000;
+    font-weight: 400;
+    max-width: 66.66667%;
+    padding-top: 20px;
+    margin-left: 30px;
+}
+
+.content-description-right {
+    clear: both;
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0;
+    color: #000000;
+    max-width: 66.66667%;
+    margin-top: 12px;
+    margin-bottom: 30px;
+    margin-left: 30px;
 }
