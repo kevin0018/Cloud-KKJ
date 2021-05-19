@@ -38,7 +38,7 @@ $from = "From: $email\r\n";
 
 
 if (!$error) {
-    mail("akevin.2215@gmail.com", $subject, $mensaje, $from);
+    mail("cloudkkj.info@gmail.com", $subject, $mensaje, $from);
 }
 ?>
 

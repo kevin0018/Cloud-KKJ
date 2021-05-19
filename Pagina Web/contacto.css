@@ -1,5 +1,5 @@
 .formulario {
-    display:block;
+    display: block !important;;
     margin:0 auto;
     width:510px;
     color: #7e89a3;
@@ -82,44 +82,3 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
     cursor: pointer;
 }
 
-.divider-line {
-    width: 1px;
-    height: 775px;
-    background-color: #ccc;
-    opacity: .25;
-}
-
-.info-item {
-    width: 1092px;
-    margin: auto;
-    margin-top: 47px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-}
-
-
-.info-item div {
-    display: block;
-}
-
-.info-title {
-    font-family: maison neue demi;
-    font-size: 18px;
-    line-height: 22px;
-    color: #4a5b69;
-}
-
-.info-text {
-    font-family: maison neue book;
-    font-size: 14px;
-    line-height: 22px;
-    color: #4a5b69;
-}
