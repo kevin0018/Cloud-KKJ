@@ -1,0 +1,45 @@
+.nosotros-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 1010px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.content-title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 27px!important;
+    line-height: 58px;
+    letter-spacing: 0;
+    color: #000000;
+    font-weight: 400;
+    width: 545px;
+    padding-top: 20px;
+}
+
+.content-description {
+    clear: both;
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px!important;
+    line-height: 27px;
+    letter-spacing: 0;
+    color: #2e2d2d;
+    width: 502px;
+    margin-top: 22px;
+}
+
+.img {
+    width: 350px;
+    height: 210px;
+    object-fit: contain;
+    vertical-align: middle;
+    border-style: none;
+}
+.div-img {
+    display: block;
+}
